@@ -1,0 +1,30 @@
+@use "./spacing" as *;
+@use "./colors" as *;
+
+//mixins for tablet and desktop
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+//this wraps the page to the center of screen if the page width goes past 1280px
+@mixin center-wrap {
+    width: 100%;
+    padding: 0 $mobile-column;
+
+    @include tablet {
+        padding: 0 $tablet-column;
+    }
+
+    @include desktop {
+        padding: 0 6.1875rem; //desktop column + tablet/desktop padding
+        margin: 0 $desktop-margin;
+    }
+}

@@ -1,0 +1,71 @@
+@use "./spacing-mixins" as *;
+@use "./colors" as *;
+
+//logo characteristics
+@mixin logo {
+    max-height: 1.5625rem;
+    max-width: 7.5rem;
+}
+
+/*
+
+//image characteristics
+@mixin image {
+    border-radius: 0.25rem;
+    object-fit: cover;
+    background-color: $secondary-color-mercury;
+}
+
+//avatar characteristics
+@mixin avatar {
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    background-color: $secondary-color-mercury;
+
+    @include tablet {
+        width: 2.5rem; 
+        height: 2.5rem; 
+    }
+}
+
+//button characteristics
+@mixin button {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    background-color: $primary-color-blue;
+    color: $primary-color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        width: 9.375rem;
+        padding: 1rem;
+    }
+
+    &:hover {
+        background-color: $secondary-color-blue;
+    }
+}
+
+//form characteristics
+@mixin form-field {
+    height: 2.25rem;
+    width: 100%;
+    min-width: 15rem;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 0.0625rem solid $secondary-color-mercury; 
+    background-color: $secondary-color-alabaster;
+    color: $primary-color-black;
+
+    @include tablet {
+        height: 2.5rem;
+        padding: 1rem;
+    }
+}
+*/
