@@ -1,6 +1,6 @@
 import './Header.scss';
 import { Link } from "react-router-dom";
-import FilterVintageIcon from '@mui/icons-material/FilterVintage';
+import {FilterVintage} from '@mui/icons-material';
 
 //navigation section for site
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
             <nav className="navigation">
                 <div className="navigation__center-wrap">
                     <Link to={`/`} className="navigation__logo-container">
-                        <img src={FilterVintageIcon} alt="logo" className="navigation__logo-image" />
+                        <FilterVintage className="navigation__logo-image" />
                     </Link>
                 </div>
             </nav>
