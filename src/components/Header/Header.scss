@@ -1,0 +1,44 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/spacing" as *;
+@use "../../styles/partials/spacing-mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography-mixins" as *;
+@use "../../styles/partials/components" as *;
+@use "../../styles/partials/global" as *;
+
+.navigation {
+    background-color: $primary-color-brown;
+    width: 100%;
+    padding: $mobile-padding-component $mobile-margin;
+
+    @include tablet {
+        padding: $mobile-padding-component $tablet-margin;
+    }
+
+    &__center-wrap {
+        @include center-wrap;
+        max-width: 75.5rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include tablet {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__menu-container {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include tablet {
+            width: 50%;
+            margin-bottom: 0;
+            justify-content: space-between;
+        }
+    }
+
+
+}
