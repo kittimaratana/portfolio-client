@@ -1,0 +1,75 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/spacing" as *;
+@use "../../styles/partials/spacing-mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography-mixins" as *;
+@use "../../styles/partials/components" as *;
+@use "../../styles/partials/global" as *;
+
+.expertise {
+    width: 100%;
+    color: $primary-color-white;
+    background-color: $primary-color-black;
+
+    &__center-wrap {
+        @include center-wrap;
+        max-width: 80rem;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $primary-color-black;
+        padding: $mobile-padding-component $mobile-margin;
+        text-align: center;
+    
+        @include tablet {
+            justify-content: space-between;
+            padding: $mobile-padding-component $mobile-margin;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__title {
+        @include subheader;
+        width: 100%;
+        padding-bottom: $mobile-padding-component;
+        text-align: center;
+    }
+
+    &__item {
+        border: 0.1rem solid $primary-color-white;
+        padding: $mobile-padding-component;
+
+        @include tablet {
+            width: 33.33%;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: $mobile-padding-component;
+    }
+
+    &__logo {
+        margin-right: 1rem;
+    }
+
+    &__subtitle {
+        @include subheader;
+    }
+
+    &__description {
+        @include body-copy;
+        display: block;
+    }
+
+
+
+}

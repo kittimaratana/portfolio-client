@@ -24,7 +24,7 @@
     }
 
     @include desktop {
-        padding: 0 6.1875rem; //desktop column + tablet/desktop padding
+        padding: 0 0; //desktop column + tablet/desktop padding
         margin: 0 $desktop-margin;
     }
 }

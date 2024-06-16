@@ -1,10 +1,13 @@
 import "./HomePage.scss";
+import Hero from "../../components/Hero/Hero";
+import ExpertiseOverview from "../../components/ExpertiseOverview/ExpertiseOverview";
 
 function HomePage() {
 
     return (
         <main>
-            <p>HomePage</p>
+            <Hero/>
+            <ExpertiseOverview/>
         </main>
     )
 }
