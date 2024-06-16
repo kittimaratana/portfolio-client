@@ -1,0 +1,28 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/spacing" as *;
+@use "../../styles/partials/spacing-mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography-mixins" as *;
+@use "../../styles/partials/components" as *;
+@use "../../styles/partials/global" as *;
+
+.navigation__menu-text {
+    display: flex;
+    height: 2rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1rem solid $primary-color-black;
+
+    @include tablet {
+        padding-left: 2rem;
+    }
+
+    &:hover {
+        background-color: black;
+
+        @include tablet {
+            background-color: $primary-color-brown;
+        }
+    }
+}
