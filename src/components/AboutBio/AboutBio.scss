@@ -5,3 +5,39 @@
 @use "../../styles/partials/typography-mixins" as *;
 @use "../../styles/partials/components" as *;
 @use "../../styles/partials/global" as *;
+
+.about-bio {
+    width: 100%;
+    background-color: $primary-color-beige;
+
+    &__center-wrap {
+        @include center-wrap;
+        position: relative;
+        max-width: 80rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include tablet {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        @include page-header;
+        padding: $mobile-padding-before-headline
+    }
+
+    &__image-container {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 90%;
+        border-radius: 10%;
+    }
+}
