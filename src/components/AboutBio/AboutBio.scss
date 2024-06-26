@@ -26,7 +26,17 @@
 
     &__title {
         @include page-header;
-        padding: $mobile-padding-before-headline
+        padding: $mobile-padding-before-headline $mobile-padding-component
+    }
+
+    &__details {
+        padding: 0 $mobile-padding-component;
+
+        @include tablet{    
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__image-container {
@@ -34,10 +44,36 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
+
+        @include tablet {
+            width: 25%;
+        }
     }
 
     &__image {
-        width: 90%;
+        width: 100%;
         border-radius: 10%;
+
+        @include tablet {
+            height: 50%;
+        }
     }
+
+    &__intro-container {
+        @include tablet {
+            width: 70%;
+        }
+    }
+
+    &__intro-title {
+        padding: $mobile-padding-component 0;
+        @include subheader
+    }
+
+    &__intro-bio {
+        padding-bottom: $mobile-padding-component;
+        @include body-copy
+    }
+
+
 }
