@@ -5,3 +5,56 @@
 @use "../../styles/partials/typography-mixins" as *;
 @use "../../styles/partials/components" as *;
 @use "../../styles/partials/global" as *;
+
+.about-work {
+    width: 100%;
+    background-color: $primary-color-white;
+
+    &__center-wrap {
+        @include center-wrap;
+        position: relative;
+        max-width: 80rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include tablet {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        /*@include page-header;*/
+        padding: $mobile-padding-before-headline $mobile-padding-component
+    }
+
+    &__container {
+        padding: 0 $mobile-padding-component;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__work {
+        @include subheader;
+        padding-bottom: $mobile-padding-component
+    }
+
+    &__role {
+        @include body-copy;
+        padding-bottom: $mobile-padding-component
+    }
+
+    &__period {
+        @include body-copy;
+        padding-bottom: $mobile-padding-component
+    }
+
+    &__detail-container {
+        @include body-copy;
+        padding-bottom: $mobile-padding-component
+    }
+}

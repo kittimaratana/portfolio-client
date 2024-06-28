@@ -5,3 +5,28 @@
 @use "../../styles/partials/typography-mixins" as *;
 @use "../../styles/partials/components" as *;
 @use "../../styles/partials/global" as *;
+
+.about-hobby {
+    width: 100%;
+    background-color: $primary-color-beige;
+
+    &__center-wrap {
+        @include center-wrap;
+        position: relative;
+        max-width: 80rem;
+    }
+
+    &__title {
+        /*@include page-header;*/
+        padding: $mobile-padding-before-headline $mobile-padding-component
+    }
+
+    &__container {
+        padding: 0 $mobile-padding-component;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
