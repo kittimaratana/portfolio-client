@@ -13,21 +13,21 @@ function ExpertiseOverview() {
                             <Computer className="expertise__logo" />
                             <section className="expertise__subtitle">Frontend Development</section>
                         </section>
-                        <section className="expertise__description">gregergrenignerw</section>
+                        <section className="expertise__description">Strong background creating intuitive and user friendly interfaces. My expertise includes designing and implementing industry modern web frameworks using JavaScript, CSS/SASS, HTML, React and React Native tools.</section>
                     </section>
                     <section className="expertise__item">
                         <section className="expertise__header">
                             <Storage className="expertise__logo" />
                             <section className="expertise__subtitle">Backend Development</section>
                         </section>
-                        <section className="expertise__description">fewoufebwhofbefwu</section>
+                        <section className="expertise__description">Robust of programming languages like Python, Java, SQL, and C with over three years of hands-on experince creating and maintaining scalable backend systems. My expertise spans across efficient data handling, API development, and database management.</section>
                     </section>
                     <section className="expertise__item">
                         <section className="expertise__header">
                             <Analytics className="expertise__logo" />
-                            <section className="expertise__subtitle">AI/ML, Cloud & Collabs</section>
+                            <section className="expertise__subtitle">AI/ML & Cloud</section>
                         </section>
-                        <section className="expertise__description">grnoeigniowegnowienvi</section>
+                        <section className="expertise__description">Extensive educational background and experiences building machine learning models and AI solutions. Expertise range from supervised and unsupervised learning, deep learning, natural language processing and generative AI across various applications.</section>
                     </section>
                 </section>
             </div>
