@@ -16,7 +16,6 @@
         max-width: 80rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
 
         @include tablet {
             justify-content: space-between;
@@ -26,7 +25,7 @@
 
     &__title {
         /*@include page-header;*/
-        padding: $mobile-padding-before-headline $mobile-padding-component
+        padding: $mobile-padding-component
     }
 
     &__container {

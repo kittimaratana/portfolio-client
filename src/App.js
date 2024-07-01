@@ -3,7 +3,6 @@ import './App.scss';
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import ExpertisePage from "./pages/ExpertisePage/ExpertisePage";
 import ArticlesPage from "./pages/ArticlesPage/ArticlesPage";
 import KonnectPage from "./pages/KonnectPage/KonnectPage";
 import Header from './components/Header/Header';
@@ -15,7 +14,6 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage/>} /> 
       <Route path="about" element={<AboutPage/>} /> 
-      <Route path="expertise" element={<ExpertisePage/>} /> 
       <Route path="articles" element={<ArticlesPage/>} /> 
       <Route path="konnect" element={<KonnectPage/>} /> 
       <Route path="*" element={<NotFoundPage/>} />

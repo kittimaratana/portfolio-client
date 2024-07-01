@@ -18,15 +18,14 @@
 
     &__title {
         /*@include page-header;*/
-        padding: $mobile-padding-before-headline $mobile-padding-component
+        padding: $mobile-padding-component $mobile-padding-component 0 $mobile-padding-component
     }
 
     &__container {
-        padding: 0 $mobile-padding-component;
+        padding: $mobile-padding-component;
+    }
 
-        @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    &__item {
+        @include body-copy;
     }
 }
