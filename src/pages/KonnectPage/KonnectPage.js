@@ -1,4 +1,5 @@
 import "./KonnectPage.scss";
+import ProjectComponent from "../../components/ProjectComponent/ProjectComponent";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../utils/constant-variables";
@@ -25,11 +26,22 @@ function KonnectPage() {
     if (hasError) {
         return <p>Unable to access projects right now. Please try again later.</p>;
     }
-    console.log(projects)
 
     return (
         <main>
             <p>KonnectPage</p>
+            <p>Other Projects</p>
+            {projects.map((project) => {
+                return (
+                    <ProjectComponent
+                        key={project.id}
+                        title={project.project_title}
+                        description={project.description}
+                        techStack={project.tech_stack}
+                        image={project.image}
+                    />
+                )
+            })}
         </main>
     )
 }

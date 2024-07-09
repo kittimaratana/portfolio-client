@@ -1,20 +1,18 @@
-import "./ArticleComponent.scss";
+import "./ProjectComponent.scss";
 import {LinkedIn} from '@mui/icons-material';
 
-function ArticleComponent({date,title,description,link}) {
+//need to do multer
+function ProjectComponent({title,description,techStack,image}) {
     return (
         <section className="article__item-container">
             <section className="article__info">
                 <p className="article__title">{title}</p>
-                <p className="article__date">{date}</p>
             </section>
             <p className="article__description">{description}</p>
-            <a href={link} className="article__link-container">
-                <LinkedIn className="article__link-image"/>
-            </a>
+            <p className="article__tech-stack">{techStack}</p>
         </section>
     )
     
 }
 
-export default ArticleComponent;
+export default ProjectComponent;
