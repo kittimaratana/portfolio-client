@@ -37,7 +37,7 @@
     &__title {
         @include subheader;
         width: 100%;
-        padding-bottom: $mobile-padding-component;
+        padding: 0.8rem 0 $mobile-padding-after-headline 0;
         text-align: center;
     }
 
@@ -62,14 +62,41 @@
     }
 
     &__subtitle {
-        @include subheader;
+        @include section-header;
+    }
+
+    &__description-container {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include tablet {
+            height: 6rem;
+        }
+    }
+
+    &__description-logo-container {
+        width: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &__description-logo--tablet {
+        display: none;
+        
+        @include tablet {
+            display: flex;
+        }
     }
 
     &__description {
         @include body-copy;
-        display: block;
+        width: 80%;
+
+        @include tablet {
+            width: 85%;
+        }
     }
-
-
-
 }

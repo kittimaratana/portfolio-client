@@ -2,8 +2,8 @@
 
 //default font size, height and weight for different devices and sections of page
 
-@mixin page-header {
-    font-size: 3rem;
+@mixin page-header { //hero
+    font-size: 4.5rem;
     line-height: 2rem;
     font-weight: 500;
 
@@ -17,16 +17,28 @@
     }
 }
 
-@mixin subheader {
-    font-size: 0.8125rem;
+@mixin subheader { //expertise title
+    font-size: 1.25rem;
     line-height: 1.125rem;
     font-weight: 700;
 
     @include tablet {
-        font-size: 0.875rem;
+        font-size: 1.5rem;
         line-height: 1.375rem;
     }
 }
+
+@mixin section-header { //frontend/backend development block title
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+
+    @include tablet {
+        font-size: 0.95rem;
+        line-height: 1.375rem;
+    }
+}
+
 
 @mixin body-copy {
     font-size: 0.8125rem;
@@ -38,13 +50,6 @@
         line-height: 1.375rem;
     }
 }
-
-@mixin section-header {
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-}
-
 
 
 @mixin labels-and-button {
