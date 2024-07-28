@@ -8,7 +8,7 @@
 
 .about-work {
     width: 100%;
-    background-color: $primary-color-white;
+    background-color: $primary-color-black;
 
     &__center-wrap {
         @include center-wrap;
@@ -37,6 +37,80 @@
         }
     }
 
+    &__item {
+        margin-bottom: $mobile-gutter;
+    }
+
+    &__preview-container {
+        background-color: #8c0af0;
+        color: white;
+        padding: $mobile-padding-component;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.5rem;
+    }
+
+    &__preview {
+        width: 90%;
+        @include body-copy;
+        font-weight: 600;
+    }
+
+    &__company-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    &__company {
+        padding-right: 0.2rem;
+    }
+
+    &__preview-logo {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__detail-container {
+        background-color: #260242;
+        color: white;
+        padding: $mobile-padding-component;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.5rem;
+    }
+
+    &__location-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: $mobile-padding-component;
+    }
+
+    &__location {
+        padding-left: 0.2rem;
+    }
+
+    &__skill-container {
+        gap: 0.4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__skill {
+        padding: 0.4rem;
+        background-color: palevioletred;
+        border-radius: 0.5rem;
+    }
+
+    &__detail-logo {
+        color: white;
+    }
+
     &__work {
         @include subheader;
         padding-bottom: $mobile-padding-component
@@ -54,6 +128,7 @@
 
     &__detail-container {
         @include body-copy;
-        padding-bottom: $mobile-padding-component
+        padding-bottom: $mobile-padding-component;
+        display: block;
     }
 }

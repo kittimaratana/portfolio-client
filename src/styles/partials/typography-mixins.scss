@@ -4,12 +4,12 @@
 
 @mixin page-header { //hero
     font-size: 4.5rem;
-    line-height: 2rem;
+    line-height: 4.75rem;
     font-weight: 500;
 
     @include tablet {
         font-size: 10rem;
-        line-height: 2.75rem;
+        line-height: 10.5rem;
     }
 
     @include desktop {
@@ -17,14 +17,25 @@
     }
 }
 
-@mixin subheader { //expertise title
+@mixin name-page-header { //hero
+    font-size: 3rem;
+    line-height: 3.125rem;
+    font-weight: 500;
+
+    @include tablet {
+        font-size: 5rem;
+        line-height: 5.1rem;
+    }
+}
+
+@mixin subheader { //expertise title //title
     font-size: 1.25rem;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
     font-weight: 700;
 
     @include tablet {
         font-size: 1.5rem;
-        line-height: 1.375rem;
+        line-height: 1.75rem;
     }
 }
 
@@ -35,22 +46,20 @@
 
     @include tablet {
         font-size: 0.95rem;
-        line-height: 1.375rem;
+        line-height: 1.1rem;
     }
 }
 
-
-@mixin body-copy {
+@mixin body-copy { //body of the text
     font-size: 0.8125rem;
     line-height: 1.125rem;
     font-weight: 400;
 
     @include tablet {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
         line-height: 1.375rem;
     }
 }
-
 
 @mixin labels-and-button {
     font-size: 0.7rem; //modified to match mockup from 0.625rem

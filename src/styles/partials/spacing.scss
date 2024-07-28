@@ -1,6 +1,7 @@
 //breakpoints and spaces for various devices. note: breakpoints are only variables left in px
 $mobile-breakpoint: 0px;
 $tablet-breakpoint: 768px;
+$laptop-breakpoint: 1024px;
 $desktop-breakpoint: 1280px;
 
 $mobile-margin: 1rem; //
@@ -10,6 +11,7 @@ $tablet-margin: 2.25rem;
 $tablet-column: auto;
 $tablet-gutter: 1.5rem;
 $desktop-margin: auto;
+//$desktop-margin: 4rem;
 $desktop-column: 3.9375rem;
 $desktop-gutter: 1.5rem;
 
