@@ -16,7 +16,6 @@
         max-width: 80rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
 
         @include tablet {
             justify-content: space-between;
@@ -26,41 +25,115 @@
 
     &__title {
         /*@include page-header;*/
-        padding: $mobile-padding-component
+        padding: $mobile-padding-component;
     }
 
     &__container {
         padding: 0 $mobile-padding-component;
+        width: 100%;
+    }
+
+    &__item {
+        margin-bottom: $mobile-gutter;
+    }
+
+    &__preview-container {
+        background-color: $primary-color-black;
+        color: white;
+        padding: $mobile-padding-component;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.5rem;
 
         @include tablet {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
         }
     }
 
-    &__item {
+    &__preview {
+        width: 90%;
+        @include body-copy;
+        font-weight: 600;
+
         @include tablet {
-            width: 50%;
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__school-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+
+        @include tablet {
+            padding-left: 0.2rem;
         }
     }
 
     &__school {
-        @include subheader;
-        padding-bottom: $mobile-padding-component
+        padding-right: 0.2rem;
     }
 
-    &__degree {
+    &__preview-logo {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+
+        @include tablet {
+            width: auto;
+        }
+    }
+
+    &__detail-container {
+        background-color: #260242;
+        color: white;
+        padding: $mobile-padding-component;
+        margin-bottom: $mobile-padding-component;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.5rem;
+    }
+
+    &__location-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: $mobile-padding-component;
+    }
+
+    &__location {
+        padding-left: 0.2rem;
+    }
+
+    &__degrees {
         @include body-copy;
         padding-bottom: $mobile-padding-component
     }
 
-    &__certifications {
-        @include body-copy;
-        padding-bottom: $mobile-padding-component
+    &__skill-container {
+        gap: 0.4rem;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    &__skills {
-        @include labels-and-button;
-        padding-bottom: $mobile-padding-component
+    &__skill {
+        padding: 0.4rem;
+        background-color: palevioletred;
+        border-radius: 0.5rem;
     }
+
+    &__detail-container {
+        @include body-copy;
+        padding-bottom: $mobile-padding-component;
+        display: block;
+    }
+
 }

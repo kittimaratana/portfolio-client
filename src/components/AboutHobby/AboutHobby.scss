@@ -27,5 +27,6 @@
 
     &__item {
         @include body-copy;
+        padding: $mobile-padding-component;
     }
 }

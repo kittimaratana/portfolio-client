@@ -24,7 +24,7 @@ function AboutWork() {
     return (
         <section class="about-work">
             <section class="about-work__center-wrap">
-                <h1 class="about-work__title">Professional Experiences</h1>
+                <h1 class="about-work__title">Work Experiences</h1>
                 <section class="about-work__container">
                     <section class="about-work__item">
                         <section class="about-work__preview-container">
@@ -67,7 +67,7 @@ function AboutWork() {
                                 <p>Data Analyst Roles @</p>
                                 <section class="about-work__company-container">
                                     <p class="about-work__company">Universal Music Group</p>
-                                    <Lyrics style={{color: 'white'}}/>
+                                    <Headphones style={{color: 'white'}}/>
                                 </section>
                             </section>
                             {!workClick2 && (
@@ -101,7 +101,7 @@ function AboutWork() {
                                 <p>Business Systems Analyst Intern @</p>
                                 <section class="about-work__company-container">
                                     <p class="about-work__company">Environment Canada</p>
-                                    <Lyrics style={{color: 'white'}}/>
+                                    <Public style={{color: 'white'}}/>
                                 </section>
                             </section>
                             {!workClick3 && (
@@ -134,7 +134,7 @@ function AboutWork() {
                                 <p>Full Stack Developer Intern @</p>
                                 <section class="about-work__company-container">
                                     <p class="about-work__company">Top Olympiads</p>
-                                    <Lyrics style={{color: 'white'}}/>
+                                    <School style={{color: 'white'}}/>
                                 </section>
                             </section>
                             {!workClick4 && (
