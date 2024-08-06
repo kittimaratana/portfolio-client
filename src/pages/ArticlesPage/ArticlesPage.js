@@ -29,19 +29,24 @@ function ArticlesPage() {
 //    console.log(articles)
 
     return (
-        <main>
-            <p>ArticlesPage</p>
-            {articles.map((article) => {
-                return (
-                    <ArticleComponent
-                        key={article.id}
-                        date={article.date}
-                        title={article.article_title}
-                        description={article.description}
-                        link={article.link}
-                    />
-                )
-            })}
+        <main class="article">
+            <section class="article__center-wrap">
+            <p class="article__title">Articles Page</p>
+                    <section class="article__container">
+                    {articles.map((article) => {
+                        return (
+                            <ArticleComponent
+                                key={article.id}
+                                date={article.date}
+                                title={article.article_title}
+                                description={article.description}
+                                link={article.link}
+                                image={article.image}
+                            />
+                        )
+                    })}
+                </section>
+            </section>
         </main>
     )
 }

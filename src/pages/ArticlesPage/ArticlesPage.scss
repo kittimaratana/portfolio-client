@@ -14,8 +14,6 @@
         @include center-wrap;
         position: relative;
         max-width: 80rem;
-        display: flex;
-        flex-wrap: wrap;
 
         @include tablet {
             justify-content: space-between;
@@ -23,17 +21,27 @@
         }
     }
 
-    &__title {
-        /*@include page-header;*/
-        padding: $mobile-padding-component
-    }
-
     &__container {
-        padding: 0 $mobile-padding-component;
+        padding: 0 $mobile-padding-component $mobile-padding-component $mobile-padding-component;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         @include tablet {
-            display: flex;
-            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0 $mobile-padding-component;
+        }
+    }
+
+    &__title {
+        @include subheader;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: $mobile-padding-component;
+
+        @include tablet {
+            padding-bottom: $mobile-padding-component;
         }
     }
 }

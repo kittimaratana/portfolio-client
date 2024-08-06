@@ -7,6 +7,13 @@
     max-width: 7.5rem;
 }
 
+//image characteristics
+@mixin image {
+    border-radius: 0.25rem;
+    object-fit: cover;
+    background-color: $primary-color-black;
+}
+
 /*
 
 //image characteristics
