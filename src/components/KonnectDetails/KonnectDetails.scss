@@ -1,0 +1,64 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/spacing" as *;
+@use "../../styles/partials/spacing-mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography-mixins" as *;
+@use "../../styles/partials/components" as *;
+@use "../../styles/partials/global" as *;
+
+.konnect-details {
+    background-color: $secondary-color-purple;
+
+    &__center-wrap {
+        @include center-wrap;
+        max-width: 80rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: $mobile-padding-component;
+
+        @include tablet {
+            justify-content: space-around;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        @include desktop {
+            padding: $mobile-padding-component;
+        }
+    }
+
+    &__intro-image {
+        width: 100%;
+        max-width: 30rem;
+
+        @include tablet {
+            width: 48%;
+        }
+    }
+
+    &__text-container {
+        width: 100%;
+
+        @include tablet {
+            width: 48%;
+        }
+    }
+
+    &__title {
+        @include subheader;
+        color: $primary-color-white;
+        padding-top: $mobile-padding-component;
+
+        @include tablet {
+            padding-top: 0;
+        }
+    }
+
+    &__subtitle {
+        @include section-header;
+        color: $primary-color-white;
+        font-weight: 400;
+        padding-top: $mobile-padding-component;
+    }
+}

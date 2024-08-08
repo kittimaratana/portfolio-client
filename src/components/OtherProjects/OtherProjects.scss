@@ -1,0 +1,36 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/spacing" as *;
+@use "../../styles/partials/spacing-mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography-mixins" as *;
+@use "../../styles/partials/components" as *;
+@use "../../styles/partials/global" as *;
+
+.other-projects {
+    width: 100%;
+    background-color: #c6b7fe;
+    
+    &__center-wrap {
+        @include center-wrap;
+        max-width: 80rem;
+        padding: $mobile-padding-component;
+
+        @include desktop {
+            padding: $mobile-padding-component;
+        }
+    }
+    
+    &__title {
+        @include subheader;
+        text-align: center;
+    }
+
+    &__projects-container {
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+}

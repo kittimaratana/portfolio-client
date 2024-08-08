@@ -34,3 +34,7 @@
         margin: 0 $desktop-margin;
     }
 }
+
+@mixin divider-left {
+    border-left: 0.0625rem solid $secondary-color-mercury;
+}

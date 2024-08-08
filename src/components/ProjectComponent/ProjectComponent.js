@@ -4,14 +4,23 @@ import {BASE_URL} from "../../utils/constant-variables";
 
 //need to do multer
 function ProjectComponent({title,description,techStack,image}) {
+
+    const renderTechStack = (techStack) => {
+        return techStack.split(", ").map((tech, index) => (
+            <p className="project-component__tech-item">{tech}</p>
+        ));
+    };
+
     return (
-        <section className="article__item-container">
-            <img className="video__image" src={`${BASE_URL}/${image}`} />
-            <section className="article__info">
-                <p className="article__title">{title}</p>
+        <section className="project-component">
+            <section className="project-component__image-container">
+                <img className="project-component__image" src={`${BASE_URL}/${image}`} />
+                <div className="project-component__image-overlay"></div>
+                <p className="project-component__title">{title}</p>
             </section>
-            <p className="article__description">{description}</p>
-            <p className="article__tech-stack">{techStack}</p>
+            <div className="project-component__tech-container">
+                {renderTechStack(techStack)}
+            </div>
         </section>
     )
     

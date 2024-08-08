@@ -1,0 +1,21 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/spacing" as *;
+@use "../../styles/partials/spacing-mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/typography-mixins" as *;
+@use "../../styles/partials/components" as *;
+@use "../../styles/partials/global" as *;
+
+//in the case that the user is on desktop settings, the main video and suggested video are put into two columns next to each other
+.center-wrap {
+    @include center-wrap;
+    max-width: 80rem;
+}
+
+.project-column {
+
+    &__other-projects {
+        background-color: #c6b7fe;
+        padding: $mobile-padding-component;
+    }
+}
