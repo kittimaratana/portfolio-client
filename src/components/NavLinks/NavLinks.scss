@@ -19,10 +19,6 @@
     }
 
     &:hover {
-        background-color: black;
-
-        @include tablet {
-            background-color: $primary-color-brown;
-        }
+        background-color: $primary-color-black;
     }
 }
