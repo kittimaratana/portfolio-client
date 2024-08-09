@@ -30,7 +30,7 @@ function OtherProjects() {
     return (
         <section className="other-projects">
             <div className="other-projects__center-wrap">
-                <p className="other-projects__title">Other Projects</p>
+                <p className="other-projects__title">Other Projects I've Worked On</p>
                 <section className="other-projects__projects-container">
                     {projects.map((project) => {
                         return (

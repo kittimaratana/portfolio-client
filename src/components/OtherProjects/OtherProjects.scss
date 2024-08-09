@@ -8,7 +8,7 @@
 
 .other-projects {
     width: 100%;
-    background-color: #c6b7fe;
+    background-color: $primary-color-black;
     
     &__center-wrap {
         @include center-wrap;
@@ -23,6 +23,7 @@
     &__title {
         @include subheader;
         text-align: center;
+        color: $primary-color-white;
     }
 
     &__projects-container {

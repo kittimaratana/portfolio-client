@@ -8,7 +8,7 @@
 
 .about-education {
     width: 100%;
-    background-color: lightgrey;
+    background-color:  #8B8A86;
 
     &__center-wrap {
         @include center-wrap;
@@ -16,10 +16,17 @@
         max-width: 80rem;
         display: flex;
         flex-wrap: wrap;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         @include tablet {
             justify-content: space-between;
             align-items: center;
+        }
+
+        @include desktop {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
     }
 
@@ -35,6 +42,7 @@
 
     &__item {
         margin-bottom: $mobile-gutter;
+        cursor: pointer;
     }
 
     &__preview-container {

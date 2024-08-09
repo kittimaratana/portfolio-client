@@ -11,7 +11,7 @@
     display: inline-block;
     margin-top: $mobile-padding-component;
     width: 100%;
-    height: 10rem;
+    height: 12rem;
 
     @include tablet {
         width: 20rem;
@@ -20,8 +20,8 @@
 
     &__image {
         //@include image;
-        display: block;
-        height: 10rem;
+        object-fit: cover;
+        height: 12rem;
         width: 100%;
     }
     

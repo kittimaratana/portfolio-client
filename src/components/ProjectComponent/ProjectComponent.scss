@@ -61,8 +61,8 @@
     &__tech-item {
         @include body-copy;
         padding: 0.4rem;
-        background-color: $secondary-color-purple;
-        border-radius: 0.5rem;
+        background-color:palevioletred;
         color: $primary-color-white;
+        border-radius: 0.5rem;
     }
 }

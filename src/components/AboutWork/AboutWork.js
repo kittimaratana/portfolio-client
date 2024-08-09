@@ -26,7 +26,7 @@ function AboutWork() {
             <section class="about-work__center-wrap">
                 <h1 class="about-work__title">Work Experiences</h1>
                 <section class="about-work__container">
-                    <section class="about-work__item">
+                    <section class="about-work__item" onClick={handleWorkClick1}>
                         <section class="about-work__preview-container">
                             <section class="about-work__preview">
                                 <p>Data Scientist @</p>
@@ -36,10 +36,10 @@ function AboutWork() {
                                 </section>
                             </section>
                             {!workClick1 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--off" onClick={handleWorkClick1}>+</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--off">+</p>
                             )}
                             {workClick1 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--on" onClick={handleWorkClick1}>-</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--on">-</p>
                             )}
                         </section>
                     </section>
@@ -61,7 +61,7 @@ function AboutWork() {
                             </section>
                         </section>
                     )}
-                    <section class="about-work__item">
+                    <section class="about-work__item" onClick={handleWorkClick2}>
                         <section class="about-work__preview-container">
                             <section class="about-work__preview">
                                 <p>Data Analyst Roles @</p>
@@ -71,10 +71,10 @@ function AboutWork() {
                                 </section>
                             </section>
                             {!workClick2 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--off" onClick={handleWorkClick2}>+</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--off">+</p>
                             )}
                             {workClick2 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--on" onClick={handleWorkClick2}>-</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--on">-</p>
                             )}
                         </section>
                     </section>
@@ -95,7 +95,7 @@ function AboutWork() {
                             </section>
                         </section>
                     )}
-                    <section class="about-work__item">
+                    <section class="about-work__item" onClick={handleWorkClick3}>
                         <section class="about-work__preview-container">
                             <section class="about-work__preview">
                                 <p>Business Systems Analyst Intern @</p>
@@ -105,10 +105,10 @@ function AboutWork() {
                                 </section>
                             </section>
                             {!workClick3 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--off" onClick={handleWorkClick3}>+</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--off">+</p>
                             )}
                             {workClick3 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--on" onClick={handleWorkClick3}>-</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--on">-</p>
                             )}
                         </section>
                     </section>
@@ -128,7 +128,7 @@ function AboutWork() {
                             </section>
                         </section>
                     )}
-                    <section class="about-work__item">
+                    <section class="about-work__item" onClick={handleWorkClick4}>
                         <section class="about-work__preview-container">
                             <section class="about-work__preview">
                                 <p>Full Stack Developer Intern @</p>
@@ -138,10 +138,10 @@ function AboutWork() {
                                 </section>
                             </section>
                             {!workClick4 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--off" onClick={handleWorkClick4}>+</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--off">+</p>
                             )}
                             {workClick4 && (
-                                <p class="about-work__preview-logo about-work__preview-logo--on" onClick={handleWorkClick4}>-</p>
+                                <p class="about-work__preview-logo about-work__preview-logo--on">-</p>
                             )}
                         </section>
                     </section>

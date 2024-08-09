@@ -18,7 +18,7 @@ function AboutEducation() {
             <section class="about-education__center-wrap">
                 <h1 class="about-education__title">Educational Background</h1>
                 <section class="about-education__container">
-                    <section class="about-education__item">
+                    <section class="about-education__item"  onClick={handleEducationClick1}>
                         <section class="about-education__preview-container">
                             <section class="about-education__preview">
                                 <p>Industrial Engineering @</p>
@@ -28,10 +28,10 @@ function AboutEducation() {
                                 </section>
                             </section>
                             {!educationClick1 && (
-                                <p class="about-education__preview-logo about-education__preview-logo--off" onClick={handleEducationClick1}>+</p>
+                                <p class="about-education__preview-logo about-education__preview-logo--off">+</p>
                             )}
                             {educationClick1 && (
-                                <p class="about-education__preview-logo about-education__preview-logo--on" onClick={handleEducationClick1}>-</p>
+                                <p class="about-education__preview-logo about-education__preview-logo--on">-</p>
                             )}
                         </section>
                     </section>
@@ -52,7 +52,7 @@ function AboutEducation() {
                             </section>
                         </section>
                     )}
-                    <section class="about-education__item">
+                    <section class="about-education__item" onClick={handleEducationClick2}>
                         <section class="about-education__preview-container">
                             <section class="about-education__preview">
                                 <p>Software Engineering @</p>
@@ -62,10 +62,10 @@ function AboutEducation() {
                                 </section>
                             </section>
                             {!educationClick2 && (
-                                <p class="about-education__preview-logo about-education__preview-logo--off" onClick={handleEducationClick2}>+</p>
+                                <p class="about-education__preview-logo about-education__preview-logo--off">+</p>
                             )}
                             {educationClick2 && (
-                                <p class="about-education__preview-logo about-education__preview-logo--on" onClick={handleEducationClick2}>-</p>
+                                <p class="about-education__preview-logo about-education__preview-logo--on">-</p>
                             )}
                         </section>
                     </section>

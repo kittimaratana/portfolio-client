@@ -26,6 +26,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
 
         @include tablet {
             gap: 1rem;
@@ -38,10 +39,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: $mobile-padding-component;
+        padding: $mobile-padding-component;
+        padding-top: $mobile-padding-component*2;
 
         @include tablet {
-            padding-bottom: $mobile-padding-component;
+            padding-top: $tablet-padding-component;
+            padding-bottom: $tablet-padding-component;
+        }
+
+        @include desktop {
+            padding-top: $tablet-padding-component*2;
+            padding-bottom: $tablet-padding-component*2;
         }
     }
 }

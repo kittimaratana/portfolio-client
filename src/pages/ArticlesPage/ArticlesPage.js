@@ -31,7 +31,7 @@ function ArticlesPage() {
     return (
         <main class="article">
             <section class="article__center-wrap">
-            <p class="article__title">Articles Page</p>
+            <p class="article__title">Cool Articles I Recommend Reading</p>
                     <section class="article__container">
                     {articles.map((article) => {
                         return (
