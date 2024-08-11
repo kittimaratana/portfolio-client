@@ -6,7 +6,7 @@ function Hero() {
         <section class="hero">
             <section class="hero__center-wrap">
                 <section class="hero__image-container">
-                    <img src={hero} alt="Hero Image" class="hero__image"/>
+                    <img src={hero} alt="Hero" class="hero__image"/>
                     <div class="hero__overlay"></div>
                     <h1 class="hero__text">Kittima</h1>
                 </section>

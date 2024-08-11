@@ -9,7 +9,7 @@ function AboutBio() {
                 <h1 class="about-bio__title">I'm Kittima</h1>
                 <section class="about-bio__details">
                     <section class="about-bio__image-container">
-                        <img src={profile} alt="profile image" class="about-bio__image"/>
+                        <img src={profile} alt="profile" class="about-bio__image"/>
                     </section>
                     <section class="about-bio__intro-container">
                         <h2 class="about-bio__intro-title">I'm a lover in all things programming and machine learning with a creative and growth mindset.</h2>

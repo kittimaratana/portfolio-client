@@ -8,7 +8,7 @@ function ArticleComponent({ date, title, description, link, image }) {
 
     return (
         <a href={link} className="article-component" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-            <img className="article-component__image" src={`${BASE_URL}/${image}`} />
+            <img className="article-component__image" alt={title} src={`${BASE_URL}/${image}`} />
             <div className={`article-component__image-overlay ${isHovered ? 'article-component__image-overlay--hover' : ""}`}></div>
             {!isHovered && (
                 <section className="article-component__detail-container">

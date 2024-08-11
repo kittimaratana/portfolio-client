@@ -1,7 +1,7 @@
 import './Header.scss';
 import { Link } from "react-router-dom";
 import {useState} from "react";
-import {Email, FilterVintage, GitHub, LinkedIn, Menu} from '@mui/icons-material';
+import {FilterVintage, Menu} from '@mui/icons-material';
 import SocialLinks from "../SocialLinks/SocialLinks";
 import NavLinks from "../NavLinks/NavLinks";
 

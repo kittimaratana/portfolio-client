@@ -1,5 +1,4 @@
 import './SocialLinks.scss';
-import { Link } from "react-router-dom";
 import {Email, GitHub, LinkedIn} from '@mui/icons-material';
 
 function SocialLinks() {
