@@ -1,2 +1,2 @@
 //server url
-export const BASE_URL = "http://localhost:5001";
+export const BASE_URL = "https://kittima-portfolio-a9950a6de577.herokuapp.com";
