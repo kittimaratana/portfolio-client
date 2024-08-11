@@ -22,7 +22,7 @@ function OtherProjects() {
             }
         };
         fetchProjects();
-    });
+    }, []);
     if (hasError) {
         return <p>Unable to access projects right now. Please try again later.</p>;
     }

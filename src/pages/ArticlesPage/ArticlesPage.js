@@ -22,7 +22,7 @@ function ArticlesPage() {
         }
         };
         fetchArticles();
-    });
+    }, []);
     if (hasError) {
         return <p>Unable to access articles right now. Please try again later.</p>;
     }
