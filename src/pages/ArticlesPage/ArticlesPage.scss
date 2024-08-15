@@ -52,4 +52,23 @@
             padding-bottom: $tablet-padding-component*2;
         }
     }
+
+    &__subtitle {
+        @include body-copy;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: $mobile-padding-component;
+        padding-top: $mobile-padding-component*2;
+
+        @include tablet {
+            padding-top: $tablet-padding-component;
+            padding-bottom: $tablet-padding-component;
+        }
+
+        @include desktop {
+            padding-top: $tablet-padding-component*2;
+            padding-bottom: $tablet-padding-component*2;
+        }
+    }
 }

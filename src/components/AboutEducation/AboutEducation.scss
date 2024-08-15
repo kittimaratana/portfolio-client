@@ -36,12 +36,6 @@
         color: $primary-color-white;
     }
 
-    &__title {
-        @include subheader;
-        padding: $mobile-padding-component;
-        color: $primary-color-white;
-    }
-
     &__container {
         padding: 0 $mobile-padding-component;
         width: 100%;
