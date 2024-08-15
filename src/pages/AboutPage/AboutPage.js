@@ -9,8 +9,8 @@ function AboutPage() {
     return (
         <main>
             <AboutBio/>
-            <AboutEducation/>
             <AboutWork/>
+            <AboutEducation/>
             <AboutHobby/>
         </main>
     )

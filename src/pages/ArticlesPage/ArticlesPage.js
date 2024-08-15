@@ -32,6 +32,7 @@ function ArticlesPage() {
         <main class="article">
             <section class="article__center-wrap">
             <p class="article__title">Cool Articles I Recommend Reading</p>
+            <p class="article__subtitle">Disclaimer: I did not write these articles. They are written others, but I found them valuable.</p>
                     <section class="article__container">
                     {articles.map((article) => {
                         return (

@@ -8,7 +8,7 @@
 
 .about-education {
     width: 100%;
-    background-color:  #8B8A86;
+    background-color:  $primary-color-black;
 
     &__center-wrap {
         @include center-wrap;
@@ -33,6 +33,13 @@
     &__title {
         /*@include page-header;*/
         padding: $mobile-padding-component;
+        color: $primary-color-white;
+    }
+
+    &__title {
+        @include subheader;
+        padding: $mobile-padding-component;
+        color: $primary-color-white;
     }
 
     &__container {
@@ -46,7 +53,7 @@
     }
 
     &__preview-container {
-        background-color: $primary-color-black;
+        background-color: #8c0af0;
         color: white;
         padding: $mobile-padding-component;
         display: flex;
