@@ -1,0 +1,22 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Development and IDE files
+.env
+.env.*
+*.log
+.vscode/
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Docker related
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Documentation
+README.md
